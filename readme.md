@@ -12,7 +12,7 @@ Le dark mode est une fonctionnalité populaire qui permet aux utilisateurs de ba
 
 ```javascript
 // Activer le dark mode
-document.getElementById('darkModeToggle').addEventListener('click', function() {
+document.getElementById('darkModeToggle').addEventListener('click', ()=> {
     document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 });
