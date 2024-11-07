@@ -1,0 +1,115 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Style global */
+
+body {
+    font: 1.6rem "Poppins", sans-serif;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    transition: background-color 0.3s, color 0.3s;
+    height: 100svh;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+header h1{
+ 
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: "Rubik Wet Paint";
+    text-shadow: .1rem .1rem 0 #e90e1d,
+    -.1rem -.1rem 0 #e90e1d,
+    .1rem -.1rem 0 #e90e1d,
+    -.1rem .1rem 0 #e90e1d;
+    color: #e4cc13;
+}
+
+main {
+   
+    padding: 2rem;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    margin:0 auto;
+}
+figure figcaption h2{
+    font-family: "Rubik Wet Paint";
+    font-size: 3.2rem;
+    color: #e90e1d;
+    text-shadow: .1rem .1rem 0 #0a0a0a,
+    -.1rem -.1rem 0 #0a0a0a,
+    .1rem -.1rem 0 #0a0a0a,
+    -.3rem .3rem 0 #0a0a0a
+}
+figure figcaption p{
+    font-weight: 200;
+    text-align: justify;
+}
+
+.affiche {
+    width: 100%;
+   
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+}
+
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Icône pour le mode clair */
+.dark-mode{
+    background-color: #333; /* Couleur du soleil */
+}
+
+/* Icône pour le mode sombre */
+.ligth-mode {
+    background-color: #fff; /* Couleur de la lune */
+}
+
+
+.material-symbols-outlined {
+font-size: 6rem;
+font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.filter-lignt-mode{
+    filter: invert(100%);
+}
+
+footer * {
+    text-align: center;
+    padding: 4rem 0 ;
+}
