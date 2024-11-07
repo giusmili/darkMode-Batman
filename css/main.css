@@ -10,6 +10,10 @@ html {
     padding: 0;
     box-sizing: inherit;
 }
+ul,p,figure,h1,h2,h3{
+    margin: 0;
+    list-style: none;
+}
 
 /* Style global */
 
@@ -64,7 +68,9 @@ figure figcaption p{
     font-weight: 200;
     text-align: justify;
 }
-
+figure figcaption ul{
+    padding-top: 1rem;
+}
 .affiche {
     width: 100%;
    
@@ -105,7 +111,7 @@ font-variation-settings:
   'opsz' 24
 }
 
-.filter-lignt-mode{
+.filter-light-mode{
     filter: invert(100%);
 }
 

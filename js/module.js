@@ -1,5 +1,6 @@
 let icon_mode = document.querySelector("button .material-symbols-outlined");
 let content = document.querySelectorAll("p")
+let list = document.querySelectorAll("ul li")
 
 export const toggleMode = () => {
     
@@ -9,13 +10,19 @@ export const toggleMode = () => {
     // Basculer le mode sur le body
     document.body.classList.remove(currentMode);
     document.body.classList.add(newMode);
-    icon_mode.classList.toggle("filter-lignt-mode");
+    icon_mode.classList.toggle("filter-light-mode");
+    
     for(let row of content){ /* itérer sur les collections */
-        row.classList.toggle("filter-lignt-mode");
+        row.classList.toggle("filter-light-mode");
+    }
+    for(let row of list){ /* itérer sur les collections */
+        row.classList.toggle("filter-light-mode");
     }
   
     
     
     // Sauvegarder le mode actuel dans localStorage
     localStorage.setItem('theme', newMode);
+    localStorage.setItem('light', list);
+    localStorage.setItem('lights', content);
 };
