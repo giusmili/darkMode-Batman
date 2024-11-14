@@ -15,7 +15,7 @@ export const toggleMode = () => {
     for(let row of content){ /* itérer sur les collections */
         row.classList.toggle("filter-light-mode");
     }
-    for(let row of list){ /* itérer sur les collections */
+    for(let row of list){ 
         row.classList.toggle("filter-light-mode");
     }
   
